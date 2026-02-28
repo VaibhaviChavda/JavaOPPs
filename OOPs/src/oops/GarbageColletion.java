@@ -12,7 +12,7 @@ class A{
     String name ;
     
     public A(String name){
-        System.out.println("Object is ");
+        System.out.println("Object is created ");
         this.name = name;
     }
 
