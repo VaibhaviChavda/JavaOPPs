@@ -26,17 +26,24 @@ public class Main {
         //because non-static belongs to the object
         //greeting() it will give an error
         
+        //for non-static methods you have to create object of class
+          Main funn = new Main();
+          funn.fun();
+        
         //we can access static method in 
         //so static method can only access static data can't access static data
         greetings();
      
     }
-     
-    void greeting(){
+    
+    //non-static
+    void fun(){
         System.out.println("Hello");
         //but it allows static member in non static
         greetings();
     }
+    
+    //static
     static void greetings(){
         System.out.println("Hello"); 
    }
