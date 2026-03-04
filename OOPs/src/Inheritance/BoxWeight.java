@@ -8,6 +8,7 @@ package Inheritance;
  *
  * @author Vaibhavi
  */
+//example of single inheritance ( one class extends another class) 
 //extends is used to inherite the parent class
 //child class (sub class)
 public class BoxWeight extends Box {
@@ -15,8 +16,7 @@ public class BoxWeight extends Box {
     public BoxWeight(){
          this.weight = -1;
     }
-    //when we want to access properties of parents class we have to initialize first by
-    //using super keyword
+    //super keyword is used to call constructor of super class
     public BoxWeight(double l, double h,double w,double weight){
         //used to initialize values of parent class
         
@@ -27,4 +27,11 @@ public class BoxWeight extends Box {
         super.w = w;
         this.weight = weight;
     }
+
+    public BoxWeight(double weight, double side) {
+        super(side);
+        this.weight = weight;
+    }
+    
+    
 }
